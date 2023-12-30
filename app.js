@@ -9,7 +9,7 @@ dotenv.config({ path: "./config.env" });
 require("./db/mongoConn.js");
 
 app.use(express.json());
-npm.use(cors({
+app.use(cors({
   origin: process.env.CORS_ORIGIN,
   credentials: true
 }))
